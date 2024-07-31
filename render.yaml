@@ -1,0 +1,25 @@
+# Exported from Render on 2024-07-31T18:06:57Z
+services:
+- type: web
+  name: HireWave
+  runtime: node
+  repo: https://github.com/charant45/HireWave
+  plan: free
+  envVars:
+  - key: API_SECRET
+    sync: false
+  - key: API_KEY
+    sync: false
+  - key: CLOUD_NAME
+    sync: false
+  - key: SECRET_KEY
+    sync: false
+  - key: PORT
+    sync: false
+  - key: MONGO_URI
+    sync: false
+  region: oregon
+  buildCommand: npm i
+  startCommand: npm run dev
+  rootDir: backend
+version: "1"
