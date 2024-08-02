@@ -21,4 +21,4 @@ const useGetAllAdminJobs = () => {
     },[])
 }
 
-export default useGetAllAdminJobs
+export default useGetAllAdminJobs;
